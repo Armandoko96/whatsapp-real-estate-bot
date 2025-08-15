@@ -6,15 +6,15 @@
 ```json
 {
   "type": "service_account",
-  "***REMOVED***": "automatizadorvsc",
-  "***REMOVED***_id": "10267edec90e4f8e9c8b5a3d2f1e0c9b8a7d6f5e",
-  "***REMOVED***": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC...\n-----END PRIVATE KEY-----\n",
-  "***REMOVED***": "firebase-adminsdk-12345@automatizadorvsc.iam.gserviceaccount.com",
-  "***REMOVED***": "123456789012345678901",
-  "***REMOVED***": "https://accounts.google.com/o/oauth2/auth",
-  "***REMOVED***": "https://accounts.google.com/o/oauth2/token",
+  "project_id": "automatizadorvsc",
+  "private_key_id": "10267edec90e4f8e9c8b5a3d2f1e0c9b8a7d6f5e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC...\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-12345@automatizadorvsc.iam.gserviceaccount.com",
+  "client_id": "123456789012345678901",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "***REMOVED***": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-12345%40automatizadorvsc.iam.gserviceaccount.com"
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-12345%40automatizadorvsc.iam.gserviceaccount.com"
 }
 ```
 
@@ -246,8 +246,8 @@ service cloud.firestore {
 
 ## ⚙️ VARIABLES DE ENTORNO RAILWAY
 ```env
-***REMOVED*** Configuration
-***REMOVED***
+# Firebase Configuration
+FIREBASE_PROJECT_ID=automatizadorvsc
 FIREBASE_CLIENT_EMAIL=firebase-adminsdk-12345@automatizadorvsc.iam.gserviceaccount.com  
 FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC...\n-----END PRIVATE KEY-----
 

@@ -6,26 +6,26 @@
 ```json
 {
   "type": "service_account",
-  "***REMOVED***": "automatizadorvsc",
-  "***REMOVED***_id": "10267edec90e...",
-  "***REMOVED***": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
-  "***REMOVED***": "...",
-  "***REMOVED***": "...",
-  "***REMOVED***": "https://accounts.google.com/o/oauth2/auth",
-  "***REMOVED***": "https://accounts.google.com/o/oauth2/token"
+  "project_id": "automatizadorvsc",
+  "private_key_id": "10267edec90e...",
+  "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
+  "client_email": "...",
+  "client_id": "...",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token"
 }
 ```
 
 ### 2️⃣ VARIABLES DE ENTORNO REQUERIDAS
 ```env
-***REMOVED***
-***REMOVED***
+# Google Drive
+GOOGLE_CREDENTIALS_PATH=./automatizadorvsc-10267edec90e.json
 GOOGLE_DRIVE_FOLDER_ID=1ABC123... # ID de carpeta raíz en Drive
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+# Firebase
+FIREBASE_PROJECT_ID=automatizadorvsc
+FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----...
+FIREBASE_CLIENT_EMAIL=firebase-adminsdk-...@automatizadorvsc.iam.gserviceaccount.com
 
 
 ## 🏗️ ESTRUCTURA DE CARPETAS EN GOOGLE DRIVE
